@@ -15,7 +15,7 @@ export function getCatsList() {
     .then(response => response.data)
     .catch(error => {
       console.error(error);
-      throw new Error('Failed to fetch breeds.');
+      throw new Error('Failed to get breeds.');
     });
 }
 export function fetchCatByBreed(breedId) {
@@ -32,26 +32,3 @@ export function fetchCatByBreed(breedId) {
       );
     });
 }
-
-//   .then(data => {
-//     axios.get(`https://api.thecatapi.com/v1/images/${data[0].id}`)
-//       .then(response => response.data)
-//       .then(data => {
-//         console.log(response);
-//       });
-//   })
-//   .catch(err => {
-//     console.log(err);
-//   });
-
-// fetch ('https://api.thecatapi.com/v1/images/search?breed_ids=beng')
-// .then(response => {
-// if(!response.ok) { throw new Error(response.status)
-// }
-// return response.json()
-// }).then(data => {
-// fetch (`https://api.thecatapi.com/v1/images/${data[0].id}`).then(response => {
-// return response.json();
-// }).then(data => {console.log(data);})
-
-// }).catch(err => {console.log(err)});

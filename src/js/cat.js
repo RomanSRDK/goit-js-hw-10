@@ -16,8 +16,6 @@ getCatsList()
   })
   .catch(error => {
     console.error(error);
-
-    showError();
   });
 
 function renderCatSelect(cats) {

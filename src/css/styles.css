@@ -38,7 +38,6 @@
 
 .cat-info {
   display: flex;
-  /* align-items: center; */
   margin-top: 20px;
   text-align: left;
 }
@@ -69,16 +68,6 @@
   font-size: 18px;
 }
 
-/* .loader-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
-} */
-
-.error {
-   
-}
 .visually-hidden {
   display: none; 
 }
